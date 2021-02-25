@@ -4,7 +4,7 @@ function Gallery() {
   return (
     <section id="gallery" className="bg-dark">
       <h1 className="text-center text-light">Gallery</h1>
-      <div className="d-flex">
+      <div className="row">
         <GalleryCard />
         <GalleryCard />
         <GalleryCard />
