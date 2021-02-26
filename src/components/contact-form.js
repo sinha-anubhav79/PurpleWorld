@@ -1,31 +1,31 @@
 function ContactForm() {
   return (
     <form class="needs-validation" novalidate>
-      <div class="row g-3 m-2">
-        <div class="col-sm-6">
-          <label for="firstName" class="form-label">
-            First name
+      <div class="row g-3">
+        <div class="col-12">
+          <label htmlFor="firstName" class="form-label">
+            First name <span className="text-danger">*</span>
           </label>
           <input
             type="text"
             class="form-control"
             id="firstName"
-            placeholder=""
+            placeholder="First Name"
             value=""
             required
           />
           <div class="invalid-feedback">Valid first name is required.</div>
         </div>
 
-        <div class="col-sm-6">
-          <label for="lastName" class="form-label">
-            Last name
+        <div class="col-12">
+          <label htmlFor="lastName" class="form-label">
+            Last name <span className="text-danger">*</span>
           </label>
           <input
             type="text"
             class="form-control"
             id="lastName"
-            placeholder=""
+            placeholder="Last Name"
             value=""
             required
           />
@@ -33,8 +33,8 @@ function ContactForm() {
         </div>
 
         <div class="col-12">
-          <label for="mobile" class="form-label">
-            Mobile
+          <label htmlFor="mobile" class="form-label">
+            Mobile <span className="text-danger">*</span>
           </label>
           <div class="input-group has-validation">
             <input
@@ -49,8 +49,8 @@ function ContactForm() {
         </div>
 
         <div class="col-12">
-          <label for="email" class="form-label">
-            Email
+          <label htmlFor="email" class="form-label">
+            Email <span className="text-danger">*</span>
           </label>
           <input
             type="email"
@@ -65,7 +65,7 @@ function ContactForm() {
         </div>
 
         <div class="col-12">
-          <label for="address" class="form-label">
+          <label htmlFor="address" class="form-label">
             Address <span class="text-muted">(Optional)</span>
           </label>
           <input
@@ -76,8 +76,8 @@ function ContactForm() {
           />
         </div>
 
-        <div class="col-md-5">
-          <label for="country" class="form-label">
+        <div class="col-12">
+          <label htmlFor="country" class="form-label">
             Country <span class="text-muted">(Optional)</span>
           </label>
           <select class="form-select" id="country">
@@ -87,8 +87,8 @@ function ContactForm() {
           <div class="invalid-feedback">Please select a valid country.</div>
         </div>
 
-        <div class="col-md-4">
-          <label for="state" class="form-label">
+        <div class="col-12">
+          <label htmlFor="state" class="form-label">
             State <span class="text-muted">(Optional)</span>
           </label>
           <select class="form-select" id="state">
@@ -98,9 +98,9 @@ function ContactForm() {
           <div class="invalid-feedback">Please provide a valid state.</div>
         </div>
 
-        <div class="col-md-3">
-          <label for="zip" class="form-label">
-            Zip
+        <div class="col-12">
+          <label htmlFor="zip" class="form-label">
+            Zip <span className="text-danger">*</span>
           </label>
           <input
             type="text"
@@ -113,9 +113,7 @@ function ContactForm() {
         </div>
       </div>
 
-      <br class="my-4" />
-
-      <div className="d-flex justify-content-center mb-3">
+      <div className="d-flex justify-content-center m-2">
         <button class="btn btn-outline-primary btn-lg" type="submit">
           Submit
         </button>

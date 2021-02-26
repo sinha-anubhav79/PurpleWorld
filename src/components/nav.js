@@ -1,9 +1,9 @@
 import logo from "../assets/img/fullLogo.png";
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top container shadow">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow px-5">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/#">
           <img src={logo} width="70" alt="logo" />
         </a>
         <button
@@ -20,22 +20,22 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a className="nav-link active" aria-current="page" href="/">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">
+              <a className="nav-link" href="/#about">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#gallery">
+              <a className="nav-link" href="/#gallery">
                 Gallery
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a className="nav-link" href="/#contact">
                 Contact
               </a>
             </li>
