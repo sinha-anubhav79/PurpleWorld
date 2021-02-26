@@ -1,9 +1,10 @@
+import logo from "../assets/img/fullLogo.png";
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div className="container-fluid d-flex flex-row-reverse">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top container shadow">
+      <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Purple World
+          <img src={logo} width="70" alt="logo" />
         </a>
         <button
           className="navbar-toggler"

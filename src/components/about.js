@@ -1,9 +1,9 @@
-import abtImg from "../assets/img/sofa.jpg";
+import abtImg from "../assets/img/yellowroom.jpg";
 function About() {
   return (
-    <section id="about">
+    <section id="about" className="container">
       <div className="row">
-        <div className="column col-xxl-8">
+        <div className="column col-xxl-6">
           <h1 className="text-center p-3">About Us</h1>
           <p className="fs-4 p-3">
             It is a long established fact that a reader will be distracted by
@@ -18,7 +18,7 @@ function About() {
             and the like).
           </p>
         </div>
-        <div className="column col-xxl-4">
+        <div className="column col-xxl-6">
           <img src={abtImg} className="w-100 h-100 img-fluid" />
         </div>
       </div>

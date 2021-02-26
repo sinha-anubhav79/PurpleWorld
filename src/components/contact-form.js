@@ -116,7 +116,7 @@ function ContactForm() {
       <br class="my-4" />
 
       <div className="d-flex justify-content-center mb-3">
-        <button class="btn btn-primary btn-lg" type="submit">
+        <button class="btn btn-outline-primary btn-lg" type="submit">
           Submit
         </button>
       </div>
