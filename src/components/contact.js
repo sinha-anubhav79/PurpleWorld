@@ -3,7 +3,7 @@ import ContactForm from "./contact-form";
 function Contact() {
   return (
     <section id="contact">
-      <h1 className="text-center">Contact</h1>
+      <h1 className="text-center p-3">Contact</h1>
       <div className="text-center mt-4">
         <a href="#">
           <i class="fa fa-instagram fa-2x social mx-5"></i>

@@ -4,7 +4,7 @@ function About() {
     <section id="about">
       <div className="row">
         <div className="column col-xxl-8">
-          <h1 className="text-center">About Us</h1>
+          <h1 className="text-center p-3">About Us</h1>
           <p className="fs-4 p-3">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
