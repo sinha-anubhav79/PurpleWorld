@@ -1,4 +1,4 @@
-import logo from "../assets/img/fullLogo.png";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-dark text-light">
@@ -21,15 +21,23 @@ function Footer() {
           <div className="col-md-3 align-self-center">
             <div className="text-center p-3">
               <h4 className="py-3">Follow Us </h4>
-              <a href="#">
-                <i class="fa fa-instagram fa-2x mx-3 text-white"></i>
-              </a>
-              <a href="#">
-                <i class="fa fa-facebook-square fa-2x mx-3 text-white"></i>
-              </a>
-              <a href="#">
-                <i class="fa fa-twitter fa-2x mx-3 text-white"></i>
-              </a>
+              <div className="row">
+                <div className="col">
+                  <a href="#">
+                    <i class="fa fa-instagram fa-2x mx-3 text-white"></i>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#">
+                    <i class="fa fa-facebook-square fa-2x mx-3 text-white"></i>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#">
+                    <i class="fa fa-twitter fa-2x mx-3 text-white"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-md-3 align-self-center text-center p-3">
@@ -44,7 +52,11 @@ function Footer() {
           <div className="col-md-3 align-self-center text-center">
             <h4>Consult our Advisor</h4>
             <div>
-              <button className="btn btn-outline-light">Contact</button>
+              <Link to="/contact">
+                <button className="btn btn-outline-light rounded-pill px-5">
+                  Contact
+                </button>
+              </Link>
             </div>
           </div>
         </div>

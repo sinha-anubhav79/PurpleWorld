@@ -32,7 +32,9 @@ function Details() {
             </p>
             <div className="text-center">
               <Link to="/contact">
-                <button className="btn btn-outline-secondary">Contact</button>
+                <button className="btn btn-outline-secondary btn-lg mb-5">
+                  Contact
+                </button>
               </Link>
             </div>
           </div>
@@ -44,38 +46,48 @@ function Details() {
           <h1 className="text-center pt-5">How it's Done</h1>
           <Process />
         </div>
-        <div>
+        <div className="container">
           <h1 className="text-center py-5">We work with the best</h1>
-          <div className="row">
-            <div className="col-md-3">
-              <img src={century_ply} width="200" alt="..." />
+          <div className="row self-align-center">
+            <div className="col-md-3 col-sm-6 col-12">
+              <img src={century_ply} width="200" alt="..." className="col-12" />
             </div>
-            <div className="col-md-3">
-              <img src={hettich} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img src={hettich} width="200" alt="..." className="col-12" />
             </div>
-            <div className="col-md-3">
-              <img src={asianpaints} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img src={asianpaints} width="200" alt="..." className="col-12" />
             </div>
-            <div className="col-md-3">
-              <img src={bosch} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img src={bosch} width="200" alt="..." className="col-12" />
             </div>
-            <div className="col-md-3">
-              <img src={fabindia} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img src={fabindia} width="200" alt="..." className="col-12" />
             </div>
-            <div className="col-md-3">
-              <img src={gulmohar_lane} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img
+                src={gulmohar_lane}
+                width="200"
+                alt="..."
+                className="col-12"
+              />
             </div>
-            <div className="col-md-3">
-              <img src={jaquar} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img src={jaquar} width="200" alt="..." className="col-12" />
             </div>
-            <div className="col-md-3">
-              <img src={philips} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img src={philips} width="200" alt="..." className="col-12" />
             </div>
-            <div className="col-md-3">
-              <img src={saint_gobain} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img
+                src={saint_gobain}
+                width="200"
+                alt="..."
+                className="col-12"
+              />
             </div>
-            <div className="col-md-3">
-              <img src={siemens} width="200" alt="..." />
+            <div className="col-md-3 col-sm-6 col-12">
+              <img src={siemens} width="200" alt="..." className="col-12" />
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ function About() {
   return (
     <section id="about" className="container">
       <div className="row">
-        <div className="column col-xxl-6">
+        <div className="column col-xxl-6" data-aos="fade-up-right">
           <h1 className="text-center p-3">Why Purple World</h1>
           <p className="fs-4 p-3">
             It is a long established fact that a reader will be distracted by
@@ -20,12 +20,14 @@ function About() {
           </p>
           <div className="text-center">
             <Link to="/details">
-              <button className="btn btn-outline-secondary">Learn More</button>
+              <button className="btn btn-outline-secondary btn-lg mb-5">
+                Learn More
+              </button>
             </Link>
           </div>
         </div>
-        <div className="column col-xxl-6">
-          <img src={abtImg} className="w-100 h-100 img-fluid" />
+        <div className="column col-xxl-6" data-aos="fade-up-left">
+          <img src={abtImg} className="w-100 h-100 img-fluid shadow" />
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./components/nav";
 import Home from "./components/home";
@@ -15,6 +14,9 @@ import Hall from "./components/hall";
 import Drawingroom from "./components/drawingroom";
 import Bathroom from "./components/bathroom";
 import Kitchen from "./components/kitchen";
+import Process from "./components/process";
+import Service from "./components/service";
+import ValueProp from "./components/value-prop";
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
           <Route path="/contact" exact>
             <ScrollToTop>
               <Contact />
+              <Process />
             </ScrollToTop>
           </Route>
           <Route path="/image/wardrobe" exact>
@@ -78,8 +81,10 @@ function LandingPage() {
   return (
     <div>
       <Home />
+      <ValueProp />
       <About />
       <Gallery />
+      <Service />
       <Contact />
     </div>
   );

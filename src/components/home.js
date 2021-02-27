@@ -1,15 +1,11 @@
 import "../css/styles.css";
-import img1 from "../assets/img/mainshowcase.jpg";
-import img2 from "../assets/img/drawingroom.jpg";
-import img3 from "../assets/img/books.jpg";
+import { Link } from "react-router-dom";
+// import img1 from "../assets/img/mainshowcase.png";
+// import img2 from "../assets/img/drawingroom.png";
+// import img3 from "../assets/img/books.png";
 function Home() {
   return (
-    <section id="home" className="container">
-      {/* <div className="bg-grade">
-        <h1 className="text-center text-light pt-5 fw-bold display-2 text-shadow">
-          Welcome
-        </h1>
-      </div> */}
+    <section id="home" className="">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -39,35 +35,39 @@ function Home() {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src={img1} class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+            <div className="img-gradient" id="img-carousel-1"></div>
+            <div class="carousel-caption d-none d-md-block fw-bolder">
+              <h1 className="fw-bolder">Purple World</h1>
+              <p>Consult Our Interior Design Advisor</p>
+              <Link to="/contact">
+                <button className="btn btn-danger rounded-pill fw-bold px-4">
+                  Consult our designer
+                </button>
+              </Link>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src={img3}
-              //"https://source.unsplash.com/1400x900/?home,design"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+            <div className="img-gradient" id="img-carousel-2"></div>
+            <div class="carousel-caption d-none d-md-block fw-bolder">
+              <h1 className="fw-bolder">Purple World</h1>
+              <p>Consult Our Interior Design Advisor</p>
+              <Link to="/contact">
+                <button className="btn btn-danger rounded-pill fw-bold px-4">
+                  Consult our designer
+                </button>
+              </Link>
             </div>
           </div>
           <div class="carousel-item">
-            <img src={img2} class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
+            <div className="img-gradient" id="img-carousel-3"></div>
+            <div class="carousel-caption d-none d-md-block fw-bolder">
+              <h1 className="fw-bolder">Purple World</h1>
+              <p>Consult Our Interior Design Advisor</p>
+              <Link to="/contact">
+                <button className="btn btn-danger rounded-pill fw-bold px-4">
+                  Consult our designer
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -89,6 +89,13 @@ function Home() {
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="circular-ring col-4 h-100"></div>
+          <div className="circular-ring col-4 h-100"></div>
+          <div className="circular-ring col-4 h-100"></div>
+        </div>
       </div>
     </section>
   );
