@@ -4,19 +4,24 @@ function About() {
   return (
     <section id="about" className="container">
       <div className="row">
-        <div className="column col-xxl-6" data-aos="fade-up-right">
+        <div className="col-12 col-xxl-6" data-aos="fade-up-right">
           <h1 className="text-center p-3">Why Purple World</h1>
           <p className="fs-4 p-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
+            Interior design will often embrace elements such as light, colour
+            and the use of specific fabrics. At Purple World, we have moved past
+            the notion of considering interiors to be just a decor addition to
+            your home and entered a realm where we now understand how your home
+            can be turned into an abode where you and your family does not just
+            live; but are able to thrive, rejuvenate and eventually get in touch
+            with their blissful self for a much more meaningful life. We
+            understand you and your needs Understanding your personality,
+            lifestyle, design preference and specific needs, we interpret your
+            story and turn it to reality through design and delivery. We exceed
+            expectations; our Designers & Design Mentors with expertise strive
+            for perfection at every step. More importantly, we use only the best
+            Superior quality materials for the best design output and built with
+            the best brand associations - Hettich, Havells, Saint Gobain, etc
+            with a team ensuring special products at best prices.
           </p>
           <div className="text-center">
             <Link to="/details">
@@ -26,7 +31,7 @@ function About() {
             </Link>
           </div>
         </div>
-        <div className="column col-xxl-6" data-aos="fade-up-left">
+        <div className="col-12 col-xxl-6" data-aos="fade-up-left">
           <img src={abtImg} className="w-100 h-100 img-fluid shadow" />
         </div>
       </div>

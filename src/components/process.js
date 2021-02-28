@@ -6,7 +6,10 @@ function Process() {
           <div className="card-body">
             <div className="mt-5">
               <div className="timeline">
-                <div className="timeline-wrapper timeline-wrapper-warning">
+                <div
+                  className="timeline-wrapper timeline-wrapper-warning"
+                  data-aos="fade-right"
+                >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -22,7 +25,10 @@ function Process() {
                     </div>
                   </div>
                 </div>
-                <div className="timeline-wrapper timeline-inverted timeline-wrapper-danger">
+                <div
+                  className="timeline-wrapper timeline-inverted timeline-wrapper-danger"
+                  data-aos="fade-left"
+                >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -36,7 +42,10 @@ function Process() {
                     </div>
                   </div>
                 </div>
-                <div className="timeline-wrapper timeline-wrapper-success">
+                <div
+                  className="timeline-wrapper timeline-wrapper-success"
+                  data-aos="fade-right"
+                >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -50,7 +59,10 @@ function Process() {
                     </div>
                   </div>
                 </div>
-                <div className="timeline-wrapper timeline-inverted timeline-wrapper-info">
+                <div
+                  className="timeline-wrapper timeline-inverted timeline-wrapper-info"
+                  data-aos="fade-left"
+                >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -65,7 +77,10 @@ function Process() {
                     </div>
                   </div>
                 </div>
-                <div className="timeline-wrapper timeline-wrapper-primary">
+                <div
+                  className="timeline-wrapper timeline-wrapper-primary"
+                  data-aos="fade-right"
+                >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -79,7 +94,10 @@ function Process() {
                     </div>
                   </div>
                 </div>
-                <div className="timeline-wrapper timeline-inverted timeline-wrapper-info">
+                <div
+                  className="timeline-wrapper timeline-inverted timeline-wrapper-info"
+                  data-aos="fade-left"
+                >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
