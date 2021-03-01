@@ -10,10 +10,7 @@ import Details from "./components/details";
 import ScrollToTop from "./components/scroll-to-top";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Bedroom from "./components/bedroom";
-import Wardrobe from "./components/wardrobe";
-import Hall from "./components/hall";
 import Drawingroom from "./components/drawingroom";
-import Bathroom from "./components/bathroom";
 import Kitchen from "./components/kitchen";
 import Process from "./components/process";
 import Service from "./components/service";
@@ -39,29 +36,14 @@ function App() {
               <Process />
             </ScrollToTop>
           </Route>
-          <Route path="/image/wardrobe" exact>
-            <ScrollToTop>
-              <Wardrobe />
-            </ScrollToTop>
-          </Route>
           <Route path="/image/bedroom" exact>
             <ScrollToTop>
               <Bedroom />
             </ScrollToTop>
           </Route>
-          <Route path="/image/hall" exact>
-            <ScrollToTop>
-              <Hall />
-            </ScrollToTop>
-          </Route>
           <Route path="/image/drawingroom" exact>
             <ScrollToTop>
               <Drawingroom />
-            </ScrollToTop>
-          </Route>
-          <Route path="/image/bathroom" exact>
-            <ScrollToTop>
-              <Bathroom />
             </ScrollToTop>
           </Route>
           <Route path="/image/kitchen" exact>
