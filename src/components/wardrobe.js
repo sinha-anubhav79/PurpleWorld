@@ -1,4 +1,6 @@
 import wardrobe from "../assets/img/wardrobe.jpg";
+import bathroom from "../assets/img/bathroom.jpg";
+import bedroom from "../assets/img/bed2.jpg";
 function Wardrobe() {
   return (
     <div className="container">
@@ -25,6 +27,8 @@ function Wardrobe() {
                 width="100"
                 className="card-img-top"
                 alt="..."
+                data-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
               />
             </div>
             <div
@@ -33,10 +37,12 @@ function Wardrobe() {
               data-bs-target="#exampleModal"
             >
               <img
-                src={wardrobe}
+                src={bedroom}
                 width="100"
                 className="card-img-top"
                 alt="..."
+                data-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
               />
             </div>
             <div
@@ -45,10 +51,12 @@ function Wardrobe() {
               data-bs-target="#exampleModal"
             >
               <img
-                src={wardrobe}
+                src={bathroom}
                 width="100"
                 className="card-img-top"
                 alt="..."
+                data-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
               />
             </div>
             <div
@@ -127,66 +135,99 @@ function Wardrobe() {
         </div>
 
         <div
-          class="modal fade"
+          className="modal fade"
           id="exampleModal"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                {/* <h5 class="modal-title" id="exampleModalLabel">
-                  Modal title
-                </h5> */}
+          <div className="modal-dialog modal-dialog-centered modal-lg">
+            <div className="modal-content">
+              <div className="modal-header">
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div className="modal-body">
                 <div
-                  id="carouselExampleControls"
-                  class="carousel slide"
+                  id="carouselExampleIndicators"
+                  className="carousel slide"
                   data-bs-ride="carousel"
-                  data-bs-interval="false"
                 >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="false">
-                      <img src={wardrobe} class="d-block w-100" alt="..." />
+                  <div className="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      className="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <img
+                        src={wardrobe}
+                        className="d-block w-100"
+                        alt="..."
+                        data-bs-slide-to="0"
+                      />
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                      <img src={wardrobe} class="d-block w-100" alt="..." />
+                    <div className="carousel-item">
+                      <img
+                        src={bedroom}
+                        className="d-block w-100"
+                        alt="..."
+                        data-bs-slide-to="1"
+                      />
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                      <img src={wardrobe} class="d-block w-100" alt="..." />
+                    <div className="carousel-item">
+                      <img
+                        src={bathroom}
+                        className="d-block w-100"
+                        alt="..."
+                        data-bs-slide-to="2"
+                      />
                     </div>
                   </div>
                   <button
-                    class="carousel-control-prev"
+                    className="carousel-control-prev"
                     type="button"
-                    data-bs-target="#carouselExampleControls"
+                    data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev"
                   >
                     <span
-                      class="carousel-control-prev-icon"
+                      className="carousel-control-prev-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span className="visually-hidden">Previous</span>
                   </button>
                   <button
-                    class="carousel-control-next"
+                    className="carousel-control-next"
                     type="button"
-                    data-bs-target="#carouselExampleControls"
+                    data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next"
                   >
                     <span
-                      class="carousel-control-next-icon"
+                      className="carousel-control-next-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Next</span>
+                    <span className="visually-hidden">Next</span>
                   </button>
                 </div>
               </div>

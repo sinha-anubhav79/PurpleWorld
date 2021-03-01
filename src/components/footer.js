@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
@@ -23,18 +24,18 @@ function Footer() {
               <h4 className="py-3">Follow Us </h4>
               <div className="row">
                 <div className="col">
-                  <a href="#">
-                    <i class="fa fa-instagram fa-2x mx-3 text-white"></i>
+                  <a href="/#">
+                    <i className="fa fa-instagram fa-2x mx-3 text-white"></i>
                   </a>
                 </div>
                 <div className="col">
-                  <a href="#">
-                    <i class="fa fa-facebook-square fa-2x mx-3 text-white"></i>
+                  <a href="/#">
+                    <i className="fa fa-facebook-square fa-2x mx-3 text-white"></i>
                   </a>
                 </div>
                 <div className="col">
-                  <a href="#">
-                    <i class="fa fa-twitter fa-2x mx-3 text-white"></i>
+                  <a href="/#">
+                    <i className="fa fa-twitter fa-2x mx-3 text-white"></i>
                   </a>
                 </div>
               </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import wardrobe from "../assets/img/wardrobe.jpg";
 import bedroom from "../assets/img/bed2.jpg";
 import hall from "../assets/img/hall.jpg";

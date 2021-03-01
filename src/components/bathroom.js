@@ -1,3 +1,4 @@
+import React from "react";
 import bathroom from "../assets/img/bathroom.jpg";
 function Bathroom() {
   return (
@@ -124,66 +125,69 @@ function Bathroom() {
         </div>
 
         <div
-          class="modal fade"
+          className="modal fade"
           id="exampleModal"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                {/* <h5 class="modal-title" id="exampleModalLabel">
+          <div className="modal-dialog modal-dialog-centered modal-lg">
+            <div className="modal-content">
+              <div className="modal-header">
+                {/* <h5 className="modal-title" id="exampleModalLabel">
                 Modal title
               </h5> */}
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div className="modal-body">
                 <div
                   id="carouselExampleControls"
-                  class="carousel slide"
+                  className="carousel slide"
                   data-bs-ride="carousel"
                   data-bs-interval="false"
                 >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="false">
-                      <img src={bathroom} class="d-block w-100" alt="..." />
+                  <div className="carousel-inner">
+                    <div
+                      className="carousel-item active"
+                      data-bs-interval="false"
+                    >
+                      <img src={bathroom} className="d-block w-100" alt="..." />
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                      <img src={bathroom} class="d-block w-100" alt="..." />
+                    <div className="carousel-item" data-bs-interval="false">
+                      <img src={bathroom} className="d-block w-100" alt="..." />
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                      <img src={bathroom} class="d-block w-100" alt="..." />
+                    <div className="carousel-item" data-bs-interval="false">
+                      <img src={bathroom} className="d-block w-100" alt="..." />
                     </div>
                   </div>
                   <button
-                    class="carousel-control-prev"
+                    className="carousel-control-prev"
                     type="button"
                     data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev"
                   >
                     <span
-                      class="carousel-control-prev-icon"
+                      className="carousel-control-prev-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span className="visually-hidden">Previous</span>
                   </button>
                   <button
-                    class="carousel-control-next"
+                    className="carousel-control-next"
                     type="button"
                     data-bs-target="#carouselExampleControls"
                     data-bs-slide="next"
                   >
                     <span
-                      class="carousel-control-next-icon"
+                      className="carousel-control-next-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Next</span>
+                    <span className="visually-hidden">Next</span>
                   </button>
                 </div>
               </div>

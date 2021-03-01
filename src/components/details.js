@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import abtImg from "../assets/img/yellowroom.jpg";
 import century_ply from "../assets/img/century_ply.png";
@@ -53,7 +54,7 @@ function Details() {
             data-aos="fade-up-left"
             data-aos-duration="1500"
           >
-            <img src={abtImg} className="w-100 h-100 img-fluid" />
+            <img src={abtImg} className="w-100 h-100 img-fluid" alt="..." />
           </div>
         </div>
         <div>

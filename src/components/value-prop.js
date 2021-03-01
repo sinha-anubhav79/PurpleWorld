@@ -1,4 +1,4 @@
-import std from "../assets/img/std.png";
+import React from "react";
 import design from "../assets/img/d.png";
 import check from "../assets/img/ch.png";
 import tech from "../assets/img/tec.png";

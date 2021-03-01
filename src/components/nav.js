@@ -1,3 +1,4 @@
+import React from "react";
 import logo from "../assets/img/fullLogo.png";
 import { Link } from "react-router-dom";
 function Nav() {

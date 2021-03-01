@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import abtImg from "../assets/img/yellowroom.jpg";
 function About() {
@@ -32,7 +33,11 @@ function About() {
           </div>
         </div>
         <div className="col-12 col-xxl-6" data-aos="fade-up-left">
-          <img src={abtImg} className="w-100 h-100 img-fluid shadow" />
+          <img
+            src={abtImg}
+            className="w-100 h-100 img-fluid shadow"
+            alt="..."
+          />
         </div>
       </div>
     </section>
