@@ -33,7 +33,7 @@ function Home() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="img-gradient" id="img-carousel-1"></div>
-            <div className="carousel-caption d-none d-md-block fw-bolder">
+            <div className="carousel-caption d-block fw-bolder">
               <h1 className="fw-bolder">Purple World</h1>
               <p>Consult Our Interior Design Advisor</p>
               <Link to="/contact">
@@ -45,7 +45,7 @@ function Home() {
           </div>
           <div className="carousel-item">
             <div className="img-gradient" id="img-carousel-2"></div>
-            <div className="carousel-caption d-none d-md-block fw-bolder">
+            <div className="carousel-caption d-block fw-bolder">
               <h1 className="fw-bolder">Purple World</h1>
               <p>Consult Our Interior Design Advisor</p>
               <Link to="/contact">
@@ -57,7 +57,7 @@ function Home() {
           </div>
           <div className="carousel-item">
             <div className="img-gradient" id="img-carousel-3"></div>
-            <div className="carousel-caption d-none d-md-block fw-bolder">
+            <div className="carousel-caption d-block fw-bolder">
               <h1 className="fw-bolder">Purple World</h1>
               <p>Consult Our Interior Design Advisor</p>
               <Link to="/contact">
