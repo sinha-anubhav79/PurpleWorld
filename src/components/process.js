@@ -2,6 +2,7 @@ import React from "react";
 function Process() {
   return (
     <div className="container">
+      <h1 className="text-center pt-5">Lets start the journey </h1>
       <div className="row">
         <div className="col-12">
           <div className="card-body">
@@ -9,106 +10,117 @@ function Process() {
               <div className="timeline">
                 <div
                   className="timeline-wrapper timeline-wrapper-warning"
-                  data-aos="fade-right"
+                  data-aos="flip-right"
                 >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
-                      <h6 className="timeline-title">
-                        “YOU” THE CENTRE OF THE PROJECT
+                      <h6 className="timeline-title fw-bold">SIGN UP</h6>
+                    </div>
+                    <div className="timeline-body">
+                      <p>Signup to get in touch with us</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="timeline-wrapper timeline-inverted timeline-wrapper-dark"
+                  data-aos="flip-left"
+                >
+                  <div className="timeline-badge"></div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h6 className="timeline-title fw-bold">
+                        THE VISUALIZATION
                       </h6>
                     </div>
                     <div className="timeline-body">
                       <p>
-                        Our process starts with understanding “YOU” and “YOUR
-                        REQUIREMENT”
+                        Start designing visuality with your designer.
+                        <br />
+                        Pay 5% of approx investment
                       </p>
                     </div>
                   </div>
                 </div>
                 <div
-                  className="timeline-wrapper timeline-inverted timeline-wrapper-danger"
-                  data-aos="fade-left"
+                  className="timeline-wrapper timeline-wrapper-info"
+                  data-aos="flip-right"
                 >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
-                      <h6 className="timeline-title">THE VISUALIZATION</h6>
+                      <h6 className="timeline-title fw-bold">LETS PLAN</h6>
                     </div>
                     <div className="timeline-body">
                       <p>
-                        Visualization of your space is very critical in our
-                        process. So we create renditions of your brief
+                        Get defaulted design
+                        <br />
+                        Pay 45% of planned investment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="timeline-wrapper timeline-inverted timeline-wrapper-primary"
+                  data-aos="flip-left"
+                >
+                  <div className="timeline-badge"></div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h6 className="timeline-title fw-bold">BEGINING</h6>
+                    </div>
+                    <div className="timeline-body">
+                      <p>
+                        Start site work
+                        <br />
+                        Pay 40% of planned investment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="timeline-wrapper timeline-wrapper-danger"
+                  data-aos="flip-right"
+                >
+                  <div className="timeline-badge"></div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h6 className="timeline-title fw-bold">MATERIALS</h6>
+                    </div>
+                    <div className="timeline-body">
+                      <p>Get factory delivery</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="timeline-wrapper timeline-inverted timeline-wrapper-warning"
+                  data-aos="flip-left"
+                >
+                  <div className="timeline-badge"></div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h6 className="timeline-title fw-bold">INSTALLATION</h6>
+                    </div>
+                    <div className="timeline-body">
+                      <p>
+                        Installation begins
+                        <br />
+                        Pay the remaining 5%
                       </p>
                     </div>
                   </div>
                 </div>
                 <div
                   className="timeline-wrapper timeline-wrapper-success"
-                  data-aos="fade-right"
+                  data-aos="flip-right"
                 >
                   <div className="timeline-badge"></div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
-                      <h6 className="timeline-title">LETS PLAN</h6>
+                      <h6 className="timeline-title fw-bold">FINISHING</h6>
                     </div>
                     <div className="timeline-body">
-                      <p>
-                        We understand as design, cost, material and the timeline
-                        is crucial for you. Hence we plan and sync with you
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="timeline-wrapper timeline-inverted timeline-wrapper-info"
-                  data-aos="fade-left"
-                >
-                  <div className="timeline-badge"></div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h6 className="timeline-title">MACHINED PERFECTION</h6>
-                    </div>
-                    <div className="timeline-body">
-                      <p>
-                        Humans create the most beautiful designs but the
-                        perfection of execution comes from machines…Hence our
-                        dear friend “the machines” work diligently
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="timeline-wrapper timeline-wrapper-primary"
-                  data-aos="fade-right"
-                >
-                  <div className="timeline-badge"></div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h6 className="timeline-title">THE CULMINATION</h6>
-                    </div>
-                    <div className="timeline-body">
-                      <p>
-                        Post the production of your dreams pieces our master
-                        craftsmen stitch up the picture you expect
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="timeline-wrapper timeline-inverted timeline-wrapper-info"
-                  data-aos="fade-left"
-                >
-                  <div className="timeline-badge"></div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h6 className="timeline-title">WE ARE NOT DONE YET</h6>
-                    </div>
-                    <div className="timeline-body">
-                      <p>
-                        Your satisfaction is of paramount importance to us
-                        that’s why a ﬁnal check before we handover
-                      </p>
+                      <p>Handover</p>
                     </div>
                   </div>
                 </div>

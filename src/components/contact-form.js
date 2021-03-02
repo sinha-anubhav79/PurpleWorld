@@ -1,5 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 function ContactForm() {
+  const [input, setInput] = useState({
+    firstName: "",
+    lastName: "",
+    mobile: "",
+    email: "",
+    address: "",
+    city: "",
+    pin: "",
+  });
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setInput((prevInput) => {
+      return {
+        ...prevInput,
+        [name]: value,
+      };
+    });
+  }
+
+  function handleClick(event) {
+    event.preventDefault();
+    const newInput = {
+      firstName: input.firstName,
+      lastName: input.lastName,
+      mobile: input.mobile,
+      email: input.email,
+      address: input.address,
+      city: input.city,
+      pin: input.pin,
+    };
+    console.log(newInput);
+  }
   return (
     <form className="needs-validation" noValidate>
       <div className="row g-3">
@@ -8,9 +42,12 @@ function ContactForm() {
             First name <span className="text-danger">*</span>
           </label>
           <input
+            onChange={handleChange}
+            value={input.firstName}
             type="text"
             className="form-control"
             id="firstName"
+            name="firstName"
             placeholder="First Name"
             required
           />
@@ -22,9 +59,12 @@ function ContactForm() {
             Last name <span className="text-danger">*</span>
           </label>
           <input
+            onChange={handleChange}
+            value={input.lastName}
             type="text"
             className="form-control"
             id="lastName"
+            name="lastName"
             placeholder="Last Name"
             required
           />
@@ -37,9 +77,12 @@ function ContactForm() {
           </label>
           <div className="input-group has-validation">
             <input
+              onChange={handleChange}
+              value={input.mobile}
               type="text"
               className="form-control"
               id="mobile"
+              name="mobile"
               placeholder="Mobile"
               required
             />
@@ -52,9 +95,12 @@ function ContactForm() {
             Email <span className="text-danger">*</span>
           </label>
           <input
+            onChange={handleChange}
+            value={input.email}
             type="email"
             className="form-control"
             id="email"
+            name="email"
             placeholder="you@example.com"
             required
           />
@@ -68,44 +114,42 @@ function ContactForm() {
             Address <span className="text-muted">(Optional)</span>
           </label>
           <input
+            onChange={handleChange}
+            value={input.address}
             type="text"
             className="form-control"
             id="address"
-            placeholder="1234 Main St"
+            name="address"
           />
         </div>
 
         <div className="col-12">
-          <label htmlFor="country" className="form-label">
-            Country <span className="text-muted">(Optional)</span>
-          </label>
-          <select className="form-select" id="country">
-            <option>Choose...</option>
-            <option>United States</option>
-          </select>
-          <div className="invalid-feedback">Please select a valid country.</div>
-        </div>
-
-        <div className="col-12">
-          <label htmlFor="state" className="form-label">
-            State <span className="text-muted">(Optional)</span>
-          </label>
-          <select className="form-select" id="state">
-            <option>Choose...</option>
-            <option>California</option>
-          </select>
-          <div className="invalid-feedback">Please provide a valid state.</div>
-        </div>
-
-        <div className="col-12">
-          <label htmlFor="zip" className="form-label">
-            Zip <span className="text-danger">*</span>
+          <label htmlFor="city" className="form-label">
+            City <span className="text-danger">*</span>
           </label>
           <input
+            onChange={handleChange}
+            value={input.city}
             type="text"
             className="form-control"
-            id="zip"
-            placeholder=""
+            id="city"
+            name="city"
+            required
+          />
+          <div className="invalid-feedback">Please provide a valid City.</div>
+        </div>
+
+        <div className="col-12">
+          <label htmlFor="pin" className="form-label">
+            Pin Code <span className="text-danger">*</span>
+          </label>
+          <input
+            onChange={handleChange}
+            value={input.pin}
+            type="text"
+            className="form-control"
+            id="pin"
+            name="pin"
             required
           />
           <div className="invalid-feedback">Zip code required.</div>
@@ -114,7 +158,8 @@ function ContactForm() {
 
       <div className="d-flex justify-content-center m-2">
         <button
-          className="btn btn-outline-dark rounded-pill btn-lg px-5"
+          onClick={handleClick}
+          className="btn btn-outline-danger rounded-pill btn-lg px-5 mt-3"
           type="submit"
         >
           Submit

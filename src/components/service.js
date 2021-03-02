@@ -8,7 +8,7 @@ import tiles from "../assets/img/flooring.png";
 function Service() {
   return (
     <section className="container">
-      <h1 className="text-center p-3">Services</h1>
+      <h1 className="text-center p-3 mt-5 sec-head">Our Expertise</h1>
       <div className="row">
         <div className="col-md-4 col-sm-6 text-center py-5" data-aos="fade-up">
           <img src={civil} alt="..." />

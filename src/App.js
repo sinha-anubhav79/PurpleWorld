@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/styles.css";
 import "./App.css";
 import Nav from "./components/nav";
 import Home from "./components/home";
@@ -34,6 +35,13 @@ function App() {
             <ScrollToTop>
               <Contact />
               <Process />
+            </ScrollToTop>
+          </Route>
+          <Route path="/image" exact>
+            <ScrollToTop>
+              <Bedroom />
+              <Drawingroom />
+              <Kitchen />
             </ScrollToTop>
           </Route>
           <Route path="/image/bedroom" exact>

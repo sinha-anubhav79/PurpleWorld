@@ -77,9 +77,9 @@ function Drawingroom() {
     <div className="container">
       <div className="row" id="drawingroom">
         <div className="text-center">
-          <h1>Drawing Room</h1>
-          <p>
-            The drawing room should be welcoming, well designed, comfortable and
+          <h1 className="pt-5">Living Room</h1>
+          <p className="cursive">
+            The living room should be welcoming, well designed, comfortable and
             stylish enough to reflect your personality. All these come from
             furniture, lighting, curtains, wall decoration, etc. The interior
             designers of Purple World are here to inspire and impress you. Have
@@ -126,7 +126,6 @@ function Drawingroom() {
             </SimpleReactLightbox>
           </div>
         </div>
-        {/* <ModalDisplay /> */}
       </div>
     </div>
   );

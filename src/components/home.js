@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/styles.css";
 import { Link } from "react-router-dom";
 function Home() {
   return (
@@ -38,7 +37,7 @@ function Home() {
               <h1 className="fw-bolder">Purple World</h1>
               <p>Consult Our Interior Design Advisor</p>
               <Link to="/contact">
-                <button className="btn btn-danger rounded-pill fw-bold px-4">
+                <button className="btn btn-danger rounded-pill fw-bold px-4 pb-2">
                   Consult our designer
                 </button>
               </Link>
@@ -93,13 +92,6 @@ function Home() {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="circular-ring col-4 h-100"></div>
-          <div className="circular-ring col-4 h-100"></div>
-          <div className="circular-ring col-4 h-100"></div>
-        </div>
       </div>
     </section>
   );

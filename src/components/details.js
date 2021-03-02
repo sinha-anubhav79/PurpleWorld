@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import abtImg from "../assets/img/yellowroom.jpg";
+import abtImg from "../assets/img/detail-img.jpg";
 import century_ply from "../assets/img/century_ply.png";
 import hettich from "../assets/img/hettich.png";
 import asianpaints from "../assets/img/asianpaints.png";
@@ -22,7 +22,7 @@ function Details() {
             data-aos="fade-up-right"
             data-aos-duration="1500"
           >
-            <h1 className="text-center p-3">About Us</h1>
+            <h1 className="text-center p-3">Why Purple World</h1>
             <p className="fs-4 p-3">
               Interior design will often embrace elements such as light, colour
               and the use of specific fabrics. At Purple World, we have moved
@@ -58,7 +58,6 @@ function Details() {
           </div>
         </div>
         <div>
-          <h1 className="text-center pt-5">How it's Done</h1>
           <Process />
         </div>
         <div className="container">

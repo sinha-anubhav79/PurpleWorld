@@ -111,8 +111,8 @@ function Kitchen() {
     <div className="container">
       <div className="row" id="kitchen">
         <div className="text-center">
-          <h1>Kitchen</h1>
-          <p>
+          <h1 className="pt-5">Kitchen</h1>
+          <p className="cursive">
             If your kitchen is indeed the heart of your home - or linked with
             your dining space - then you’ll want to fill it with the kind of
             luxury you’d expect at your very favourite restaurant. Our portfolio
@@ -176,7 +176,6 @@ function Kitchen() {
             </SimpleReactLightbox>
           </div>
         </div>
-        {/* <ModalDisplay /> */}
       </div>
     </div>
   );

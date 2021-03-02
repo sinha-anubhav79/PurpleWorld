@@ -5,58 +5,81 @@ function Footer() {
     <footer className="bg-dark text-light">
       <div className="container">
         <div className="row">
-          <div className="col-md-3 text-center p-3 align-self-center">
+          <div className="col-md text-center p-3 align-self-center">
             <h4>Get in touch </h4>
             <br />
             <p>
               Call us
               <br />
-              +91 9148 484 666
+              +91 9999 999 999
               <br />
               <br />
               Email Us
               <br />
-              care@livspace.com
+              info@purpleworld.com
             </p>
           </div>
-          <div className="col-md-3 align-self-center">
+          <div className="col-md align-self-center">
             <div className="text-center p-3">
               <h4 className="py-3">Follow Us </h4>
               <div className="row">
                 <div className="col">
                   <a href="/#">
-                    <i className="fa fa-instagram fa-2x mx-3 text-white"></i>
+                    <i className="fa fa-instagram fa-2x  text-white"></i>
                   </a>
                 </div>
                 <div className="col">
                   <a href="/#">
-                    <i className="fa fa-facebook-square fa-2x mx-3 text-white"></i>
+                    <i className="fa fa-facebook-square fa-2x text-white"></i>
                   </a>
                 </div>
                 <div className="col">
                   <a href="/#">
-                    <i className="fa fa-twitter fa-2x mx-3 text-white"></i>
+                    <i className="fa fa-twitter fa-2x text-white"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 align-self-center text-center p-3">
+          <div className="col-md align-self-center text-center p-3">
             <h4>Our Location </h4>
             <br />
             <p>
-              Bonito Designs
+              Purple World
               <br />
-              #1182, 5th Main Road, Sector 7, HSR Layout, Bangalore – 560102.
+              5th Main Road, Sector 7, HSR Layout, Bangalore – 560102.
             </p>
           </div>
-          <div className="col-md-3 align-self-center text-center">
+          <div className="col-md align-self-center text-center">
             <h4>Consult our Advisor</h4>
             <div>
               <Link to="/contact">
                 <button className="btn btn-outline-light rounded-pill px-5">
                   Contact
                 </button>
+              </Link>
+            </div>
+          </div>
+          <div className="col-md text-center p-3 align-self-center">
+            <h3 className="mb-3">Links</h3>
+            <div>
+              <Link className="footer-links" to="/">
+                Home
+              </Link>
+            </div>
+            <div>
+              <Link className="footer-links" to="/details">
+                About
+              </Link>
+            </div>
+            <div>
+              <Link className="footer-links" to="/image">
+                Services
+              </Link>
+            </div>
+            <div>
+              <Link className="footer-links" to="/contact">
+                Contact
               </Link>
             </div>
           </div>

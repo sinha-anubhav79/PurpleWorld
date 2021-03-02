@@ -1,3 +1,48 @@
+* {
+  font-family: "Roboto";
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+.cursive {
+  font-style: italic;
+  font-size: 22px;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links:hover {
+  color: rgb(219, 219, 219);
+}
+
+.sec-head {
+  font-size: 3rem;
+}
+.bg-white-a {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.form-control {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  box-shadow: none;
+}
+
+.form-control:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .thumb-post {
   overflow: hidden;
 }
@@ -9,6 +54,7 @@
 }
 .thumb-img:hover {
   border-style: solid;
+  border-color: rgba(67, 64, 64, 0.4);
 }
 .round-edge {
   border-radius: 2%;

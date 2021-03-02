@@ -77,8 +77,8 @@ function Bedroom() {
     <div className="container">
       <div className="row" id="bedroom">
         <div className="text-center">
-          <h1>Bedroom</h1>
-          <p>
+          <h1 className="pt-5">Bedroom</h1>
+          <p className="cursive">
             Wrap your tired eyes around this massive gallery of refreshing
             modern bedroom ideas and gorgeous bedroom accessories that are sure
             to wake you up. From ultra sleek minimalist style bedrooms to warm
@@ -125,7 +125,6 @@ function Bedroom() {
             </SimpleReactLightbox>
           </div>
         </div>
-        {/* <ModalDisplay /> */}
       </div>
     </div>
   );
