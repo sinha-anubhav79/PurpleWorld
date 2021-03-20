@@ -9,7 +9,7 @@ import Gallery from "./components/gallery";
 import Contact from "./components/contact";
 import Details from "./components/details";
 import ScrollToTop from "./components/scroll-to-top";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Bedroom from "./components/bedroom";
 import Drawingroom from "./components/drawingroom";
 import Kitchen from "./components/kitchen";

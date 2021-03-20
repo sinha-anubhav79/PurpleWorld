@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import abtImg from "../assets/img/detail-img.jpg";
+import abtImg from "../assets/img/detail-img1.jpg";
 import century_ply from "../assets/img/century_ply.png";
 import hettich from "../assets/img/hettich.png";
 import asianpaints from "../assets/img/asianpaints.png";
@@ -18,11 +18,11 @@ function Details() {
       <div className="container">
         <div className="row">
           <div
-            className="col-12 col-xxl-6"
-            data-aos="fade-up-right"
+            className="col-12 col-xl-6"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <h1 className="text-center p-3">Why Purple World</h1>
+            <h1 className="text-center p-3">Why Purple World?</h1>
             <p className="fs-4 p-3">
               Interior design will often embrace elements such as light, colour
               and the use of specific fabrics. At Purple World, we have moved
@@ -34,8 +34,8 @@ function Details() {
               meaningful life. We understand you and your needs Understanding
               your personality, lifestyle, design preference and specific needs,
               we interpret your story and turn it to reality through design and
-              delivery. We exceed expectations; our Designers & Design Mentors
-              with expertise strive for perfection at every step. More
+              delivery. We exceed expectations; our Designers &amp; Design
+              Mentors with expertise strive for perfection at every step. More
               importantly, we use only the best Superior quality materials for
               the best design output and built with the best brand associations
               - Hettich, Havells, Saint Gobain, etc with a team ensuring special
@@ -50,8 +50,8 @@ function Details() {
             </div>
           </div>
           <div
-            className="col-12 col-xxl-6"
-            data-aos="fade-up-left"
+            className="col-12 col-xl-6"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
             <img src={abtImg} className="w-100 h-100 img-fluid" alt="..." />

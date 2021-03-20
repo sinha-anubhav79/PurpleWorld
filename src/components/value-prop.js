@@ -27,7 +27,7 @@ function ValueProp() {
             <img src={tech} alt="..." />
             <h3>TECHNOLOGY</h3>
             <p>
-              Our machines anddesign platform is the latest available in the
+              Our machines and design platform is the latest available in the
               market to providebest of the results
             </p>
           </div>

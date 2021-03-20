@@ -5,8 +5,8 @@ function About() {
   return (
     <section id="about" className="container">
       <div className="row">
-        <div className="col-12 col-xxl-6" data-aos="fade-up-right">
-          <h1 className="text-center p-3">Why Purple World</h1>
+        <div className="col-12 col-lg-6" data-aos="fade-up">
+          <h1 className="text-center p-3">Why Purple World?</h1>
           <p className="fs-4 p-3">
             Interior design will often embrace elements such as light, colour
             and the use of specific fabrics. At Purple World, we have moved past
@@ -18,11 +18,11 @@ function About() {
             understand you and your needs Understanding your personality,
             lifestyle, design preference and specific needs, we interpret your
             story and turn it to reality through design and delivery. We exceed
-            expectations; our Designers & Design Mentors with expertise strive
-            for perfection at every step. More importantly, we use only the best
-            Superior quality materials for the best design output and built with
-            the best brand associations - Hettich, Havells, Saint Gobain, etc
-            with a team ensuring special products at best prices.
+            expectations; our Designers &amp; Design Mentors with expertise
+            strive for perfection at every step. More importantly, we use only
+            the best Superior quality materials for the best design output and
+            built with the best brand associations - Hettich, Havells, Saint
+            Gobain, etc with a team ensuring special products at best prices.
           </p>
           <div className="text-center">
             <Link to="/details">
@@ -32,7 +32,7 @@ function About() {
             </Link>
           </div>
         </div>
-        <div className="col-12 col-xxl-6" data-aos="fade-up-left">
+        <div className="col-12 col-lg-6" data-aos="fade-up">
           <img
             src={abtImg}
             className="w-100 h-100 img-fluid shadow"

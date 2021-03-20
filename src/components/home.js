@@ -32,15 +32,16 @@ function Home() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <div className="img-gradient" id="img-carousel-1"></div>
-            <div className="carousel-caption d-block fw-bolder">
-              <h1 className="fw-bolder">Purple World</h1>
-              <p>Consult Our Interior Design Advisor</p>
-              <Link to="/contact">
-                <button className="btn btn-danger rounded-pill fw-bold px-4 pb-2">
-                  Consult our designer
-                </button>
-              </Link>
+            <div className="img-gradient" id="img-carousel-1">
+              <div className="carousel-caption d-block fw-bolder">
+                <h1 className="fw-bolder">Purple World</h1>
+                <p>Consult Our Interior Design Advisor</p>
+                <Link to="/contact">
+                  <button className="btn btn-danger rounded-pill fw-bold px-4 pb-2">
+                    Consult our designer
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="carousel-item">
