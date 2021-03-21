@@ -30,14 +30,16 @@ function Process() {
     "Handover",
   ];
   useEffect(() => {
-    setTimeout(
+    let timer = setInterval(
       () =>
         setCurrentImage((prevCurrentImage) =>
           prevCurrentImage === 6 ? 0 : prevCurrentImage + 1
         ),
       2500
     );
-    return () => {};
+    return () => {
+      clearInterval(timer);
+    };
   }, [currentImage]);
   return (
     <div className="container">
