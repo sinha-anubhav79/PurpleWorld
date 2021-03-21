@@ -1,21 +1,38 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "./css/styles.css";
 import "./App.css";
 import Nav from "./components/nav";
-import Home from "./components/home";
-import About from "./components/about";
+// import Home from "./components/home";
+// import About from "./components/about";
 import Footer from "./components/footer";
-import Gallery from "./components/gallery";
-import Contact from "./components/contact";
-import Details from "./components/details";
-import ScrollToTop from "./components/scroll-to-top";
+// import Gallery from "./components/gallery";
+// import Contact from "./components/contact";
+// import Details from "./components/details";
+// import ScrollToTop from "./components/scroll-to-top";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import Bedroom from "./components/bedroom";
-import Drawingroom from "./components/drawingroom";
-import Kitchen from "./components/kitchen";
-import Process from "./components/process";
-import Service from "./components/service";
-import ValueProp from "./components/value-prop";
+// import Bedroom from "./components/bedroom";
+// import Drawingroom from "./components/drawingroom";
+// import Kitchen from "./components/kitchen";
+// import Process from "./components/process";
+// import Service from "./components/service";
+// import ValueProp from "./components/value-prop";
+// import FAQs from "./components/faq";
+// import Testimonials from "./components/testimonials";
+
+const Home = lazy(() => import("./components/home"));
+const About = lazy(() => import("./components/about"));
+const Gallery = lazy(() => import("./components/gallery"));
+const Contact = lazy(() => import("./components/contact"));
+const ScrollToTop = lazy(() => import("./components/scroll-to-top"));
+const Details = lazy(() => import("./components/details"));
+const Bedroom = lazy(() => import("./components/bedroom"));
+const Drawingroom = lazy(() => import("./components/drawingroom"));
+const Kitchen = lazy(() => import("./components/kitchen"));
+const Process = lazy(() => import("./components/process"));
+const Service = lazy(() => import("./components/service"));
+const ValueProp = lazy(() => import("./components/value-prop"));
+const FAQs = lazy(() => import("./components/faq"));
+const Testimonials = lazy(() => import("./components/testimonials"));
 
 function App() {
   return (
@@ -24,40 +41,54 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact>
-            <LandingPage />
+            <Suspense fallback={<Loader />}>
+              <LandingPage />
+            </Suspense>
           </Route>
           <Route path="/details" exact>
-            <ScrollToTop>
-              <Details />
-            </ScrollToTop>
+            <Suspense fallback={<Loader />}>
+              <ScrollToTop>
+                <Details />
+              </ScrollToTop>
+            </Suspense>
           </Route>
           <Route path="/contact" exact>
-            <ScrollToTop>
-              <Contact />
-              <Process />
-            </ScrollToTop>
+            <Suspense fallback={<Loader />}>
+              <ScrollToTop>
+                <Contact />
+                <Process />
+              </ScrollToTop>
+            </Suspense>
           </Route>
           <Route path="/image" exact>
-            <ScrollToTop>
-              <Bedroom />
-              <Drawingroom />
-              <Kitchen />
-            </ScrollToTop>
+            <Suspense fallback={<Loader />}>
+              <ScrollToTop>
+                <Bedroom />
+                <Drawingroom />
+                <Kitchen />
+              </ScrollToTop>
+            </Suspense>
           </Route>
           <Route path="/image/bedroom" exact>
-            <ScrollToTop>
-              <Bedroom />
-            </ScrollToTop>
+            <Suspense fallback={<Loader />}>
+              <ScrollToTop>
+                <Bedroom />
+              </ScrollToTop>
+            </Suspense>
           </Route>
           <Route path="/image/drawingroom" exact>
-            <ScrollToTop>
-              <Drawingroom />
-            </ScrollToTop>
+            <Suspense fallback={<Loader />}>
+              <ScrollToTop>
+                <Drawingroom />
+              </ScrollToTop>
+            </Suspense>
           </Route>
           <Route path="/image/kitchen" exact>
-            <ScrollToTop>
-              <Kitchen />
-            </ScrollToTop>
+            <Suspense fallback={<Loader />}>
+              <ScrollToTop>
+                <Kitchen />
+              </ScrollToTop>
+            </Suspense>
           </Route>
         </Switch>
         <Footer />
@@ -76,7 +107,21 @@ function LandingPage() {
       <About />
       <Gallery />
       <Service />
+      <Testimonials />
+      <FAQs />
       <Contact />
+    </div>
+  );
+}
+
+function Loader() {
+  return (
+    <div className="conatiner h-100 d-flex justify-content-center loader">
+      <div className="my-auto">
+        <div className="spinner-border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
     </div>
   );
 }

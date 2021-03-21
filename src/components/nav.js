@@ -33,7 +33,7 @@ function Nav() {
             </li>
             <li className="nav-item fs-5 fw-bold px-3">
               <Link className="nav-link" to="/image">
-                Services
+                Gallery
               </Link>
             </li>
             <li className="nav-item fs-5 fw-bold px-3">

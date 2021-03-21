@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function Footer() {
+  const refreshPage = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <footer className="bg-dark text-light">
       <div className="container">
@@ -53,7 +56,7 @@ function Footer() {
           <div className="col-md align-self-center text-center">
             <h4>Consult our Advisor</h4>
             <div>
-              <Link to="/contact">
+              <Link to="/contact" onClick={refreshPage}>
                 <button className="btn btn-outline-light rounded-pill px-5">
                   Contact
                 </button>
@@ -63,22 +66,30 @@ function Footer() {
           <div className="col-md text-center p-3 align-self-center">
             <h3 className="mb-3">Links</h3>
             <div>
-              <Link className="footer-links" to="/">
+              <Link className="footer-links" to="/" onClick={refreshPage}>
                 Home
               </Link>
             </div>
             <div>
-              <Link className="footer-links" to="/details">
+              <Link
+                className="footer-links"
+                to="/details"
+                onClick={refreshPage}
+              >
                 About
               </Link>
             </div>
             <div>
-              <Link className="footer-links" to="/image">
+              <Link className="footer-links" to="/image" onClick={refreshPage}>
                 Services
               </Link>
             </div>
             <div>
-              <Link className="footer-links" to="/contact">
+              <Link
+                className="footer-links"
+                to="/contact"
+                onClick={refreshPage}
+              >
                 Contact
               </Link>
             </div>

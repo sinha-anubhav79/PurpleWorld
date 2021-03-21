@@ -6,7 +6,7 @@ import GalleryCard from "./gallery-card";
 function Gallery() {
   return (
     <section id="gallery" className="bg-white container">
-      <h1 className="text-center text-dark p-3 mt-5 sec-head">Our services</h1>
+      <h1 className="text-center text-dark p-3 mt-5 sec-head">Gallery</h1>
       <div className="row">
         <GalleryCard
           cardImage={bedroom}

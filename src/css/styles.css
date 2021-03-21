@@ -127,3 +127,37 @@ h5 {
   position: relative;
   display: table;
 }
+
+.fa-angle-right,
+.fa-angle-left {
+  color: black;
+}
+
+.testimonial-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.testimonial .card {
+  border: none;
+}
+
+.faq-question {
+  text-decoration: none;
+  color: black;
+}
+
+.faq-question:hover {
+  color: rgb(26, 26, 26);
+}
+
+.loader {
+  min-height: 100vh;
+  position: relative;
+  display: table;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-color: whitesmoke;
+}
