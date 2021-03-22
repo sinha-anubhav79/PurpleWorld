@@ -12,6 +12,7 @@ import poem09 from "../assets/bedroom_d/bd09.jpg";
 import poem10 from "../assets/bedroom_d/bd10.jpg";
 
 function Testimonials() {
+  const [fade, setFade] = useState(0);
   const [currentImage, setCurrentImage] = useState(0);
   const pearray = [
     poem01,
@@ -49,18 +50,35 @@ function Testimonials() {
     "Netus et malesuada fames ac. Enim ut sem viverra aliquet. Iaculis urna id volutpat lacus laoreet. Sagittis purus sit amet volutpat consequat mauris nunc. Sociis natoque penatibus et magnis dis parturient montes nascetur. Urna condimentum mattis pellentesque id nibh. Vulputate odio ut enim blandit. Nunc congue nisi vitae suscipit tellus. Lectus vestibulum mattis ullamcorper velit sed. Lobortis elementum nibh tellus molestie nunc non blandit. ",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   ];
+  // function ani() {
+  //   if (fade) {
+  //     document.getElementById("test").classList.add("toggleIn");
+  //     document.getElementById("test").classList.remove("toggleOut");
+  //   } else {
+  //     document.getElementById("test").classList.add("toggleOut");
+  //     document.getElementById("test").classList.remove("toggleIn");
+  //   }
+  //   setFade(!fade);
+  // }
   useEffect(() => {
-    let timer = setInterval(
-      () =>
-        setCurrentImage((prevCurrentImage) =>
-          prevCurrentImage === 9 ? 0 : prevCurrentImage + 1
-        ),
-      2500
-    );
+    let timer = setInterval(() => {
+      setCurrentImage((prevCurrentImage) =>
+        prevCurrentImage === 9 ? 0 : prevCurrentImage + 1
+      );
+      // ani();
+      if (fade) {
+        document.getElementById("test").classList.add("toggleIn");
+        document.getElementById("test").classList.remove("toggleOut");
+      } else {
+        document.getElementById("test").classList.add("toggleOut");
+        document.getElementById("test").classList.remove("toggleIn");
+      }
+      setFade(!fade);
+    }, 2500);
     return () => {
       clearInterval(timer);
     };
-  }, [currentImage]);
+  }, [currentImage, fade]);
   return (
     <section>
       <div className="testimonial">
@@ -71,15 +89,29 @@ function Testimonials() {
               <div className="carousel-control-prev">
                 <i
                   className="fa fa-angle-left fa-4x"
-                  onClick={() =>
+                  onClick={() => {
                     currentImage > 0
                       ? setCurrentImage(currentImage - 1)
-                      : setCurrentImage(9)
-                  }
+                      : setCurrentImage(9);
+                    if (fade) {
+                      document.getElementById("test").classList.add("toggleIn");
+                      document
+                        .getElementById("test")
+                        .classList.remove("toggleOut");
+                    } else {
+                      document
+                        .getElementById("test")
+                        .classList.add("toggleOut");
+                      document
+                        .getElementById("test")
+                        .classList.remove("toggleIn");
+                    }
+                    setFade(!fade);
+                  }}
                 ></i>
               </div>
               <div className="col-md-8 col-12 text-center align-self-center">
-                <div className="pt-3">
+                <div className="pt-3" id="test">
                   <img
                     src={pearray[currentImage]}
                     alt="current"
@@ -93,11 +125,27 @@ function Testimonials() {
                 <div className="carousel-control-next">
                   <i
                     className="fa fa-angle-right fa-4x"
-                    onClick={() =>
+                    onClick={() => {
                       currentImage < 9
                         ? setCurrentImage(currentImage + 1)
-                        : setCurrentImage(0)
-                    }
+                        : setCurrentImage(0);
+                      if (fade) {
+                        document
+                          .getElementById("test")
+                          .classList.add("toggleIn");
+                        document
+                          .getElementById("test")
+                          .classList.remove("toggleOut");
+                      } else {
+                        document
+                          .getElementById("test")
+                          .classList.add("toggleOut");
+                        document
+                          .getElementById("test")
+                          .classList.remove("toggleIn");
+                      }
+                      setFade(!fade);
+                    }}
                   ></i>
                 </div>
               </div>

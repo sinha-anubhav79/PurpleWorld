@@ -9,6 +9,7 @@ import install from "../assets/steps/install21.png";
 import finish from "../assets/steps/finish.png";
 
 function Process() {
+  const [fade, setFade] = useState(0);
   const [currentImage, setCurrentImage] = useState(0);
   const steparray = [signup, visualize, plan, site, factory, install, finish];
   const headarray = [
@@ -30,17 +31,23 @@ function Process() {
     "Handover",
   ];
   useEffect(() => {
-    let timer = setInterval(
-      () =>
-        setCurrentImage((prevCurrentImage) =>
-          prevCurrentImage === 6 ? 0 : prevCurrentImage + 1
-        ),
-      2500
-    );
+    let timer = setInterval(() => {
+      setCurrentImage((prevCurrentImage) =>
+        prevCurrentImage === 6 ? 0 : prevCurrentImage + 1
+      );
+      if (fade) {
+        document.getElementById("animate-steps").classList.add("toggleIn");
+        document.getElementById("animate-steps").classList.remove("toggleOut");
+      } else {
+        document.getElementById("animate-steps").classList.add("toggleOut");
+        document.getElementById("animate-steps").classList.remove("toggleIn");
+      }
+      setFade(!fade);
+    }, 2500);
     return () => {
       clearInterval(timer);
     };
-  }, [currentImage]);
+  }, [currentImage, fade]);
   return (
     <div className="container">
       <h1 className="text-center p-5">Lets start the journey </h1>
@@ -54,7 +61,25 @@ function Process() {
                     ? "slider-number-active text-center"
                     : "slider-number text-center"
                 }
-                onClick={() => setCurrentImage(0)}
+                onClick={() => {
+                  setCurrentImage(0);
+                  if (fade) {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleIn");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleOut");
+                  } else {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleOut");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleIn");
+                  }
+                  setFade(!fade);
+                }}
               >
                 1
               </button>
@@ -66,7 +91,25 @@ function Process() {
                     ? "slider-number-active text-center"
                     : "slider-number text-center"
                 }
-                onClick={() => setCurrentImage(1)}
+                onClick={() => {
+                  setCurrentImage(1);
+                  if (fade) {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleIn");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleOut");
+                  } else {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleOut");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleIn");
+                  }
+                  setFade(!fade);
+                }}
               >
                 2
               </button>
@@ -78,7 +121,25 @@ function Process() {
                     ? "slider-number-active text-center"
                     : "slider-number text-center"
                 }
-                onClick={() => setCurrentImage(2)}
+                onClick={() => {
+                  setCurrentImage(2);
+                  if (fade) {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleIn");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleOut");
+                  } else {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleOut");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleIn");
+                  }
+                  setFade(!fade);
+                }}
               >
                 3
               </button>
@@ -90,7 +151,25 @@ function Process() {
                     ? "slider-number-active text-center"
                     : "slider-number text-center"
                 }
-                onClick={() => setCurrentImage(3)}
+                onClick={() => {
+                  setCurrentImage(3);
+                  if (fade) {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleIn");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleOut");
+                  } else {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleOut");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleIn");
+                  }
+                  setFade(!fade);
+                }}
               >
                 4
               </button>
@@ -102,7 +181,25 @@ function Process() {
                     ? "slider-number-active text-center"
                     : "slider-number text-center"
                 }
-                onClick={() => setCurrentImage(4)}
+                onClick={() => {
+                  setCurrentImage(4);
+                  if (fade) {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleIn");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleOut");
+                  } else {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleOut");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleIn");
+                  }
+                  setFade(!fade);
+                }}
               >
                 5
               </button>
@@ -114,7 +211,25 @@ function Process() {
                     ? "slider-number-active text-center"
                     : "slider-number text-center"
                 }
-                onClick={() => setCurrentImage(5)}
+                onClick={() => {
+                  setCurrentImage(5);
+                  if (fade) {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleIn");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleOut");
+                  } else {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleOut");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleIn");
+                  }
+                  setFade(!fade);
+                }}
               >
                 6
               </button>
@@ -126,13 +241,34 @@ function Process() {
                     ? "slider-number-active text-center"
                     : "slider-number text-center"
                 }
-                onClick={() => setCurrentImage(6)}
+                onClick={() => {
+                  setCurrentImage(6);
+                  if (fade) {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleIn");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleOut");
+                  } else {
+                    document
+                      .getElementById("animate-steps")
+                      .classList.add("toggleOut");
+                    document
+                      .getElementById("animate-steps")
+                      .classList.remove("toggleIn");
+                  }
+                  setFade(!fade);
+                }}
               >
                 7
               </button>
             </div>
           </div>
-          <div className="col-md-6 col-10 text-center align-self-center">
+          <div
+            className="col-md-6 col-10 text-center align-self-center"
+            id="animate-steps"
+          >
             <Steps
               heading={headarray[currentImage]}
               description={descriptionarray[currentImage]}

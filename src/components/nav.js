@@ -2,6 +2,9 @@ import React from "react";
 import logo from "../assets/img/pw-logo.png";
 import { Link } from "react-router-dom";
 function Nav() {
+  const refreshPage = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow px-5">
       <div className="container-fluid">
@@ -22,7 +25,7 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item fs-5 fw-bold px-3">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/" onClick={refreshPage}>
                 Home
               </Link>
             </li>
