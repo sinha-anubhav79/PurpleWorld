@@ -8,6 +8,7 @@ function GalItem(props) {
           width="100"
           className="card-img-top thumb-img"
           alt="..."
+          loading="lazy"
         />
       </a>
     </div>

@@ -4,7 +4,7 @@ function FAQs() {
   return (
     <section>
       <div className="container">
-        <h1 className="pt-5 text-center">FAQs</h1>
+        <h1 className="text-center p-3 mt-5 sec-head">FAQs</h1>
         <div className="faq-card mx-sm-5 mx-3">
           <br />
           <a
@@ -82,6 +82,8 @@ function FAQs() {
             </div>
           </div>
         </div>
+        <br />
+        <br />
       </div>
     </section>
   );

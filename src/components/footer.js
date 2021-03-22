@@ -85,6 +85,11 @@ function Footer() {
               </Link>
             </div>
             <div>
+              <Link className="footer-links" to="/faq" onClick={refreshPage}>
+                FAQs
+              </Link>
+            </div>
+            <div>
               <Link
                 className="footer-links"
                 to="/contact"

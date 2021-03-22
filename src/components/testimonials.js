@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import poem01 from "../assets/bedroom_d/bd01.jpg";
 import poem02 from "../assets/bedroom_d/bd02.jpg";
@@ -39,20 +39,32 @@ function Testimonials() {
   ];
   const descarray = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Adipiscing elit ut aliquam purus sit amet. Euismod in pellentesque massa placerat duis ultricies. Fermentum odio eu feugiat pretium nibh ipsum consequat. Morbi tristique senectus et netus. Mollis aliquam ut porttitor leo a. Hac habitasse platea dictumst vestibulum rhoncus est. Purus in mollis nunc sed id. Erat nam at lectus urna duis. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.",
+    "Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Adipiscing elit ut aliquam purus sit amet. Euismod in pellentesque massa placerat duis ultricies. Fermentum odio eu feugiat pretium nibh ipsum consequat. Morbi tristique senectus et netus. Mollis aliquam ut porttitor leo a. Hac habitasse platea dictumst vestibulum rhoncus est. Purus in mollis nunc sed id. Erat nam at lectus urna duis. Diam in arcu cursus euismod quis viverra.",
     "Netus et malesuada fames ac. Enim ut sem viverra aliquet. Iaculis urna id volutpat lacus laoreet. Sagittis purus sit amet volutpat consequat mauris nunc. Sociis natoque penatibus et magnis dis parturient montes nascetur. Urna condimentum mattis pellentesque id nibh. Vulputate odio ut enim blandit. Nunc congue nisi vitae suscipit tellus. Lectus vestibulum mattis ullamcorper velit sed. Lobortis elementum nibh tellus molestie nunc non blandit. ",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Adipiscing elit ut aliquam purus sit amet. Euismod in pellentesque massa placerat duis ultricies. Fermentum odio eu feugiat pretium nibh ipsum consequat. Morbi tristique senectus et netus. Mollis aliquam ut porttitor leo a. Hac habitasse platea dictumst vestibulum rhoncus est. Purus in mollis nunc sed id. Erat nam at lectus urna duis. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.",
+    "Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Adipiscing elit ut aliquam purus sit amet. Euismod in pellentesque massa placerat duis ultricies. Fermentum odio eu feugiat pretium nibh ipsum consequat. Morbi tristique senectus et netus. Mollis aliquam ut porttitor leo a. Hac habitasse platea dictumst vestibulum rhoncus est. Purus in mollis nunc sed id. Erat nam at lectus urna duis. Diam in arcu cursus euismod quis viverra.",
     "Netus et malesuada fames ac. Enim ut sem viverra aliquet. Iaculis urna id volutpat lacus laoreet. Sagittis purus sit amet volutpat consequat mauris nunc. Sociis natoque penatibus et magnis dis parturient montes nascetur. Urna condimentum mattis pellentesque id nibh. Vulputate odio ut enim blandit. Nunc congue nisi vitae suscipit tellus. Lectus vestibulum mattis ullamcorper velit sed. Lobortis elementum nibh tellus molestie nunc non blandit. ",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Adipiscing elit ut aliquam purus sit amet. Euismod in pellentesque massa placerat duis ultricies. Fermentum odio eu feugiat pretium nibh ipsum consequat. Morbi tristique senectus et netus. Mollis aliquam ut porttitor leo a. Hac habitasse platea dictumst vestibulum rhoncus est. Purus in mollis nunc sed id. Erat nam at lectus urna duis. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.",
+    "Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Adipiscing elit ut aliquam purus sit amet. Euismod in pellentesque massa placerat duis ultricies. Fermentum odio eu feugiat pretium nibh ipsum consequat. Morbi tristique senectus et netus. Mollis aliquam ut porttitor leo a. Hac habitasse platea dictumst vestibulum rhoncus est. Purus in mollis nunc sed id. Erat nam at lectus urna duis. Diam in arcu cursus euismod quis viverra.",
     "Netus et malesuada fames ac. Enim ut sem viverra aliquet. Iaculis urna id volutpat lacus laoreet. Sagittis purus sit amet volutpat consequat mauris nunc. Sociis natoque penatibus et magnis dis parturient montes nascetur. Urna condimentum mattis pellentesque id nibh. Vulputate odio ut enim blandit. Nunc congue nisi vitae suscipit tellus. Lectus vestibulum mattis ullamcorper velit sed. Lobortis elementum nibh tellus molestie nunc non blandit. ",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   ];
+  useEffect(() => {
+    let timer = setInterval(
+      () =>
+        setCurrentImage((prevCurrentImage) =>
+          prevCurrentImage === 9 ? 0 : prevCurrentImage + 1
+        ),
+      2500
+    );
+    return () => {
+      clearInterval(timer);
+    };
+  }, [currentImage]);
   return (
     <section>
       <div className="testimonial">
-        <h1 className="pt-5 pb-3 text-center">Testimonials</h1>
+        <h1 className="text-center p-3 mt-5 sec-head">Testimonials</h1>
         <div className="container" data-aos="fade-up">
           <div className="card">
             <div className="row justify-content-center">

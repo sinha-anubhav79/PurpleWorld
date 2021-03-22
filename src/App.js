@@ -90,6 +90,13 @@ function App() {
               </ScrollToTop>
             </Suspense>
           </Route>
+          <Route path="/faq" exact>
+            <Suspense fallback={<Loader />}>
+              <ScrollToTop>
+                <FAQs />
+              </ScrollToTop>
+            </Suspense>
+          </Route>
         </Switch>
         <Footer />
       </div>

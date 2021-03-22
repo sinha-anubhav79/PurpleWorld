@@ -72,7 +72,7 @@ h5 {
   bottom: 10vh;
 }
 .img-gradient {
-  height: 80vh;
+  height: 70vh;
   position: relative;
   display: table;
   width: 100%;
@@ -150,6 +150,10 @@ h5 {
 
 .faq-question:hover {
   color: rgb(26, 26, 26);
+}
+
+.faq-card h3 {
+  font-weight: 500;
 }
 
 .loader {
