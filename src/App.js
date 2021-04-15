@@ -115,7 +115,7 @@ function LandingPage() {
       <Gallery />
       <Service />
       <Testimonials />
-      <FAQs />
+      {/* <FAQs /> */}
       <Contact />
     </div>
   );

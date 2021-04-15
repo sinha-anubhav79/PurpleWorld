@@ -84,11 +84,11 @@ function Footer() {
                 Services
               </Link>
             </div>
-            <div>
+            {/* <div>
               <Link className="footer-links" to="/faq" onClick={refreshPage}>
                 FAQs
               </Link>
-            </div>
+            </div> */}
             <div>
               <Link
                 className="footer-links"

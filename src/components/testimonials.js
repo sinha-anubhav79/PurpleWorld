@@ -50,22 +50,11 @@ function Testimonials() {
     "Netus et malesuada fames ac. Enim ut sem viverra aliquet. Iaculis urna id volutpat lacus laoreet. Sagittis purus sit amet volutpat consequat mauris nunc. Sociis natoque penatibus et magnis dis parturient montes nascetur. Urna condimentum mattis pellentesque id nibh. Vulputate odio ut enim blandit. Nunc congue nisi vitae suscipit tellus. Lectus vestibulum mattis ullamcorper velit sed. Lobortis elementum nibh tellus molestie nunc non blandit. ",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   ];
-  // function ani() {
-  //   if (fade) {
-  //     document.getElementById("test").classList.add("toggleIn");
-  //     document.getElementById("test").classList.remove("toggleOut");
-  //   } else {
-  //     document.getElementById("test").classList.add("toggleOut");
-  //     document.getElementById("test").classList.remove("toggleIn");
-  //   }
-  //   setFade(!fade);
-  // }
   useEffect(() => {
     let timer = setInterval(() => {
       setCurrentImage((prevCurrentImage) =>
         prevCurrentImage === 9 ? 0 : prevCurrentImage + 1
       );
-      // ani();
       if (fade) {
         document.getElementById("test").classList.add("toggleIn");
         document.getElementById("test").classList.remove("toggleOut");
